@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Expense Management Finance DashBoard</h1>
+        <div class="sub-container">
+            <div class="main">
+                <div class="total_amount_Container">
+                    <h3 class="heading">Expense Management</h3>
+                    <p class="error" id="bug-error"> Please Cannot Enter Nagative Entry!! </p>
+                    <input type="number" name="" id="total_amount" placeholder="Enter Your Montly Budget">
+                    <button id="total_amount_btn"> Set Budget</button>
+                </div>
+                <div class="user_amount_container">
+                    <h3 class="heading">Expense_Budget </h3>
+                    <p class="user-error" id="bug-user"> Please Cannot Enter Emty Value!! </p>
+                    <!-- <input type="number" name="" id="user-amount" placeholder="Please Enter Your Expense"> -->
+                    <input type="date" id="date-exp" >
+                    <select name="" id="user-amount" class="select-tittle" id="select-tittle">
+                        <option value="" selected disabled>Please Select Head Of Expense</option>
+                        <option value="">Entertainment-Expense</option>
+                        <option value="">Travel Expense</option>
+                        <option value="">Fuel Expense</option>
+                        <option value="">Rent Expense</option>
+                        <option value="">Medical Expense</option>
+                        <option value="">miscellaneous Expense</option>
+                        <option value="">conveyance Expense</option>
+                    </select>
+                    <input type="text" id="descreption" class="product-tillte" id="product-tillte"
+                        placeholder="Please Enter Expense Description">
+                    <input type="number" id="user-exp" class="exp-tillte" id="exp-tillte"
+                        placeholder="Enter Your Expense Amounr">
+                    <button class="check-amount" id="user"> Set Expense</button>
+                </div>
+            </div>
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Bug</p>
+                    <span id="exp_value">00</span>
+                </div>
+                <div>
+                    <p>Expense Amount</p>
+                    <span id="exp_amount">00</span>
+                </div>
+                <div>
+                    <p>Remaining Balance</p>
+                    <span id="balance_value">00</span>
+                </div>
+            </div>
+            <div class="list-container">
+                <p>Expense List :</p>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
