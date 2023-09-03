@@ -1,0 +1,20 @@
+{
+    "liveServer.settings.port": 5501
+}
+
+
+
+// total_btn.addEventListener("click", () => {
+//     tempAmount = total_amount_inp.value;
+//     if (tempAmount == "" || tempAmount < 0  ) {
+//         error_Message2.classList.remove("error")
+//     }
+//     else {
+//         error_Message2.classList.add("error")
+//         bug_value.innerHTML = tempAmount
+//         balance_value.innerHTML = tempAmount - exp_amount.innerText;
+//         total_amount_inp.value = ""
+
+//     }
+
+// })

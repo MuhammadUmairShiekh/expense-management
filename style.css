@@ -10,6 +10,8 @@
     max-width: 43.75em;
     font-size: 20px;
     margin: 1em auto;
+    transition: 0.9s ease-out;
+     animation-duration: 0.3s;   
     /* margin:  5em 0 0 19em; */
 }
 .sub-container{
@@ -23,7 +25,17 @@
     grid-template-columns: 1fr 1fr;
     gap: 3em;
 }
+#bug-error,#bug-user{
+    /* background-color: red; */
+    padding: 10px;
+    color: red ;
+    text-align: center;
+}
 
+.error{
+    opacity: 0;
+    transition: 0.7s all;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -32,38 +44,47 @@
 .flex-space{
     margin-top: 20px;
     display: flex;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    background-color: #3498db;
     padding: 20px;
     border-radius: 5px;
+    background-color: #d7e0e7c1;
 
-    box-shadow: 0 0.6em 1.2em rgb(32, 45, 35);
 
 }
 .flex-space p{
-      color: white;
-      margin-bottom: 20px;
-      margin: 10px;
+    /* width: 100%; */
+    padding: 30px;
+    background-color: #ffff;
+    font-weight: 800;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.6em 1.2em rgb(32, 45, 35);
+      color: #2c3e50;
+      /* margin-bottom: 20px; */
+      /* margin: 10px; */
     font-weight: 600;
-    font-size: 19px;
-      
+    font-size: 19px;      
       border-top: 5px solid #082a4c;
-      border-bottom: 5px solid #e3eaf1;
+      /* border-bottom: 5px solid #e3eaf1; */
       text-transform: uppercase;
     
 }
+
+
 .flex-space span {
     margin-top: 20px;
-    color: white;
+    color: black;
     display: block;
     
 }
 .container h3{
     background-color: #3498db;
     border-radius: 5px;
-
     text-transform: uppercase;
     color: white;
     font-size: 25px;
@@ -74,7 +95,7 @@
 }
 .sub-container select{
     background-color: #3498db;
-    padding: 7px;
+    padding: 12px;
     color: white;
     border-radius: 5px;
 
@@ -161,7 +182,7 @@ button::after, button::before {
     transform: skew(45deg) translate(-50%, -50%);
    }
    
-   :hover {
+   button:hover {
     color: white !important;
    }
    
@@ -177,15 +198,52 @@ button::after, button::before {
     border-radius: 5px;
 
 }
-.list-container{
-    background-color: #3498db;
+.list{
+    background-color: #FFF;
     border-radius: 5px;
-
     box-shadow: 0 0.6em 1.2em rgb(32, 45, 35);
-    color: white;
+    color: #3498db;
     font-weight: 800;
     font-size: 28px;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 40px;
+    margin-top: 40px;
     text-transform: uppercase;
+}
+
+
+
+#list{
+    list-style: decimal;
+    
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#list li{
+   margin: 10px;
+   padding: 10px;
+   background-color: rgb(70, 70, 70);
+   position: relative;
+   font-weight: 600;
+   color: #0fffff;
+   /* text-align: center; */
+  word-spacing: 10px;
+
+  
+
+    
+}
+.Del{
+    background-color: red;
+    padding: 10px;
+    position: absolute;
+    top: 0%;
+    right:-4.1%;
+    opacity: 0;
+    transition: 0.7s ease-in-out;
+}
+
+ li:hover .Del{
+    opacity: 1;
+    cursor: pointer;
 }
